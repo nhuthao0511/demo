@@ -827,6 +827,7 @@ button, select{
         justify-content: space-between;
         z-index: 1 !important;
         top: 44% !important;
+        max-width: 1185px;
     }
 }
 @media (max-width: 768px){
@@ -949,5 +950,5 @@ button, select{
 @media (min-width: 1200px){
      .blog{margin-bottom: 50px;}
      .blog-card{   min-width: calc(25% - 22.5px);}
-
+    
 }
