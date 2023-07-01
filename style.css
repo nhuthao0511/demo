@@ -713,7 +713,7 @@ button, select{
 
 /* --------------San pham noi bat--------------- */
 .card_product{
-    width: 200px;
+    width: 250px;
     height: 300px;
     border-radius: 1em;
     padding: 1.9rem;
@@ -781,6 +781,7 @@ button, select{
     color: var(--bg-color);
     font-weight: bold;
     transition: 0.4s ease;
+
    }
    
    /*Image*/
@@ -800,7 +801,7 @@ transform: translateY(5%);
 }
 .card_product:hover:before {
     opacity: 1;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,.2);
     border-radius: 1em;
 }
 .card_product:hover .card-info {
