@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.ThaiPhong.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">.THÁI <span>PHONG.</span></a>
+            <ul class="navbar">
+                <li><a href="#" class="active">Trang chủ</a></li>
+                <li class="licha"><a href="#section-p1">Sản Phẩm +</a>
+                    <ul class="lever1">
+                        <li><a href="#">Nến thơm</a></li>
+                        <li class="licon"><a href="">Tinh dầu thơm phòng+</a>
+                            <ul class="lever2">
+                                <li><a href="">Dạng nước</a></li>
+                                <li><a href="">Dạng thanh</a></li>
+                                <li><a href="">Dạng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Sáp thơm</a></li>     
+                    </ul>
+                </li>     
+                <li><a href="#blog">Tin tức</a></li>
+                <li><a href="#home">Liên hệ</a></li>
+                <li><a href="#home">Giới thiệu</a></li>
+                <li><a href="#home">Cẩm nang</a></li>
+            </ul>
+            <!-- Search ICON -->
+                <i class='bx bx-search' id="search-icon"></i>
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <!-- SearchBOX -->
+                <div class="search-box  container ">
+                    <input type="search" name="" id="" placeholder="Bạn cần tìm gì?">
+                </div>
+           </div>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+                <h1>Hương hoa của nến <br>giúp <span>thư giản</span> </h1>
+                <p>Nến được làm ra bởi người Việt Nam nguyên liệu tự nhiên</p>
+                <p>Kiểm duyệt chặt chẽ, và an toàn cho sức khỏe</p>
+                <!-- Nút liên hệ làm nến -->
+                <button class="datlamnen" id="btn">
+                    ĐẶT LỊCH LÀM NẾN
+                  </button>
+         </div>
+    </section>
+<!-- SANPham -->
+<section class="section__product" id="section-p1">
+    <div class="container">
+        <div class="bodyrow">
+            <div class="product__img">
+                <img src="img/sanpham5.jpg" width="100%" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/sanpham1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/sanpham2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/sanpham3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/sanpham4.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/sanpham5.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+                <a href="" class="product__link">
+                </a>
+            </div>
+            <div class="product__box">
+                <h2 class="title-product">
+                    <a href="">
+                        COTTON FLOWER HONEY CANDLE
+                    </a>
+                </h2>
+                <div class="price-box">
+                    <span class="old-price">400.000đ</span>
+                    <span class="save-price">1.300.000đ</span>
+                </div>
+                <div class="product-description">
+                    <p>Nến thơm Đặc Biệt với độ toả hương mạnh và rộng hơn</p>
+                    <p> Nến được làm ra bởi người Việt Nam với nguyên liệu tự nhiên, kiểm duyệt chặt chẽ, và an toàn cho sức khỏe</p>
+                    <p>Thành phần: Sáp được làm hoàn toàn từ cọ dừa. Hương giữa của bông hoa tinh khiết và hoa nhài ngọt ngào, được tăng cường với mật hoa trái cây -mềm mại và hổ phách.</p>
+                    <p>Sử dụng được 3-3,5 tháng. Để nến ở nơi cao khô ráo</p>
+                </div>
+                <form action="" class="add-to__cart-form">
+                    <div class="form__product">
+                        <div class="select sswatch">
+                            <div class="otions-title">
+                                Số lượng
+                            </div>
+                        </div>
+                        <div class=" form_add-cart">
+                            <div class=" input__number-product">
+                                <div class="custom-number">
+                                    <label>Số lượng:</label>
+                                    <div class="custom-numbers input_number_product">		
+                                        <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN(qty) & qty > 1 ) result.value--;return false;" class="btn-minus btn-cts" type="button">–</button>
+                                        <input class="soluong" aria-label="Số lượng" type="text" class="qty input-text" id="qty" name="quantity" size="4" value="1" maxlength="3" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" onchange="if(this.value == 0)this.value=1;">
+                                        <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" class="btn-plus btn-cts" type="button">+</button>
+                                    </div>
+                                    <div class="vd"> 
+                                        <span class="vend_c">Còn hàng</span>  
+                                    </div>
+                                </div>
+                                        <button type="submit" class="add_to_cart lienhe">
+                                            <span class="text">Liên hệ</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ride" id="ride">
+        <div class="heading">
+            <span>Quy trình làm nến thơm</span>
+            <h1>Các bước thực hiện</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class="na-icon fa-solid fa-1"></i>
+                <h2>Làm tan chảy sáp trong nồi hấp. Hoặc không, bạn cũng có thể cho sáp vào hộp đựng thuỷ tinh hoặc chén sứ rồi đun sôi nước trong một cái chảo, sao cho nước không rơi vào bình chứa sáp nến.</h2>
+            </div>
+            <div class="box">
+                <i class="na-icon fa-solid fa-2"></i>
+                <h2>Sau khi nến tan chảy hết, hãy đổ một ít sáp lên đế bấc nến vào đáy hộp thủy tinh..</h2>
+            </div>
+            <div class="box">
+                <i class="na-icon fa-solid fa-3"></i>
+                <h2>Nhỏ 10 giọt tinh dầu bạc hà, 10 giọt tinh dầu chanh và 10 giọt tinh dầu oải hương vào sáp đã tan chảy và khuấy đều..</h2>
+            </div>
+            <div class="box">
+                <i class="na-icon fa-solid fa-4"></i>
+                <h2>Đổ hỗn hợp trên vào hộp thủy tinh và để khô..</h2>
+            </div>
+        </div>
+</section>
+<div class="blog" id="blog">
+    <div class="heading_blog"><h1>.TháiPhong. Tin tức</h1></div>
+    <div class="blogbox">
+        <div class="slide-wrapper">
+            <div id="left" class="left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="right" class="right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="blog-container has-scrollbar">
+            <div class="blog-card">
+                <a href="#">
+                    <img src="./img/blog1.webp" alt="" class="blog-banner">
+                </a>
+                <div class="blog-content">
+                    <a href="" class="blog-category">Hương hoa của nến</a>
+                    <a href="">
+                        <h3 class="blog-title">Cách Làm Nến Thơm Nhiều Màu Ombré Tại Nhà Với 8 Bước Đơn Giản Cùng .TháiPhong. </h3>
+                    </a>
+                    <p class="blog-meta">
+                        Bởi <cite>TháiPhong</cite> / <time datetime="2023-06-29"> 29 tháng 06, 2023</time>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+              <a href="#">
+                    <img src="./img/blog2.webp" alt="" width="300" class="blog-banner">
+                </a>
+                <div class="blog-content">
+                    <a href="" class="blog-category">Hương hoa của nến</a>
+                    <a href="">
+                        <h3 class="blog-title">Cách Làm Nến Thơm Trong Suốt Trang Trí Décor Phòng Ngủ Siêu Xinh Với .TháiPhong.</h3>
+                    </a>
+                    <p class="blog-meta">
+                        By <cite>TháiPhong</cite> / <time datetime="2023-06-29"> 1 tháng 06, 2023</time>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+
+                <a href="#">
+                    <img src="./img/blog3.webp" alt="" width="300" class="blog-banner">
+                </a>
+                <div class="blog-content">
+                    <a href="" class="blog-category">Hương hoa của nến</a>
+                    <a href="">
+                        <h3 class="blog-title">Cách Tự Làm Nến Thơm Tại Nhà Đơn Giản Cho Người Mới Bắt Đầu</h3>
+                    </a>
+                    <p class="blog-meta">
+                        By <cite>TháiPhong</cite> / <time datetime="2023-06-29"> 29 tháng 06, 2023</time>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+
+                <a href="#">
+                    <img src="./img/blog4.webp" alt="" width="300" class="blog-banner">
+                </a>
+                <div class="blog-content">
+                    <a href="" class="blog-category">Hương hoa của nến</a>
+                    <a href="">
+                        <h3 class="blog-title">Lần Đầu Làm Nến Thơm Thì Nên Mua Nguyên Liệu Gì Tại .TháiPhong. ?</h3>
+                    </a>
+                    <p class="blog-meta">
+                        By <cite>TháiPhong</cite> / <time datetime="2023-06-29"> 29 tháng 05, 2021</time>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+
+                <a href="#">
+                    <img src="./img/blog5.webp" alt="" width="300" class="blog-banner">
+                </a>
+                <div class="blog-content">
+                    <a href="" class="blog-category">Hương hoa của nến</a>
+                    <a href="">
+                        <h3 class="blog-title">Cách Làm Sáp Thơm Handmade Đơn Giản</h3>
+                    </a>
+                    <p class="blog-meta">
+                        By <cite>TháiPhong</cite> / <time datetime="2023-06-29"> 29 tháng 05, 2021</time>
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+<div id="backtop">
+    <i class='bx_top bx bx-chevron-up'></i>
+</div>
+<div id="backtop_booking" style="z-index: 1; visibility: visible;
+opacity: 1;
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+transition: opacity 2.6s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2.6s cubic-bezier(0.5, 0, 0, 1) 0s;">
+    <i class="fa-regular fa-calendar-check"></i>
+</div>
+    <!------------------------------------- FOOTER---------------------------------->
+    <section class="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+            <a href="#" class="logo">.THÁI <span>PHONG.</span></a>
+            <div class="social">
+                <a href="#"><i class='bx_icon one bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx_icon two bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx_icon three bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx_icon four bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>DANH SÁCH CÁC CHI NHÁNH</h3>
+            <a href="#">Đakao Quận 1</a>
+            <a href="#">122 Quận 4</a>
+            <a href="#">Nguyễn trãi Quận 5</a>
+        </div>
+        <div class="footer-box">
+            <h3>CHÍNH SÁCH MUA HÀNG</h3>
+            <a href="#"><i class="fa-solid fa-handshake"></i> ĐỔI TRẢ TRONG VÒNG 3 NGÀY</a>
+            <a href="#"><i class="fa-solid fa-truck-fast"></i> MIỄN PHÍ VẬN CHUYỂN</a>
+            <a href="#"><i class="fa-solid fa-handshake"></i> HOÀN 30% PHÍ BOOKING</a>
+        </div>
+        <div class="footer-box">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p><i class="fa-solid fa-location-dot"></i>  126 Nguyễn Trãi Quận 5, TP.Hồ Chí Minhh</p> 
+            <p><i class="fa-solid fa-phone"></i> 1800 6750</p>
+            <p><i class="fa-regular fa-envelope"></i> thaiphong@gmail.com</p>
+        </div>
+    </div>
+</section>
+<!-- Copyright -->
+<div class="copyright">
+    <p>&#169; .ThaiPhong. Đã đăng ký bản quyền</p>
+</div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+    $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('#backtop').fadeIn();
+            } else {
+                $('#backtop').fadeOut();
+            }
+            // if ($(this).scrollTop()) {
+            //     $('#backtop_booking').fadeIn();
+            // } else {
+            //     $('#backtop_booking').fadeOut();
+            // }
+        });
+        $("#backtop").click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 100);
+    });
+});
+</script>
+
+</html>
