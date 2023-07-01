@@ -817,7 +817,7 @@ button, select{
     }
 
     .blog .blog-container{
-        grid-auto-columns: calc((100% / 2) - 9px);
+        grid-auto-columns: calc((100% / 1) - 7px);
     }
 
      .slide-wrapper {
