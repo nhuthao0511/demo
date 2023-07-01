@@ -92,6 +92,7 @@ arrowBtns.forEach(btn => {
         carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
 });
+
 const dragStart = (e) => {
     isDragging = true;
     carousel.classList.add("dragging");
