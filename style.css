@@ -520,8 +520,8 @@ button, select{
 }
 /*---------------------------------------------- TIN TỨC--------------------------------- */
 .blog {margin-bottom: 20px; position: relative;}
-.blog .blogbox .slide-wrapper {
-    width: 100% !important;
+.slide-wrapper {
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -544,6 +544,7 @@ button, select{
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
     align-items: start;
+    top: 130px;
 }
 .blog-card{
    min-width: 100%;
@@ -608,7 +609,7 @@ button, select{
 }
 
 .slide-wrapper{
-  max-width: 1310px;
+  max-width: 1185px;
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, .2) ;
@@ -820,7 +821,7 @@ button, select{
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
-    .blog .blogbox .slide-wrapper {
+     .slide-wrapper {
         width: 92.5% ;
         position: absolute;
         display: flex;
@@ -934,9 +935,12 @@ button, select{
         grid-auto-columns: 100%;
     }
 
-    /* .slide-wrapper{
-        overflow: hidden;
-    } */
+    .slide-wrapper{
+        max-width: 1310px;
+        width: 100%;
+    } 
+
+
 }
 @media (min-width: 570px) {
     .blog-container{
