@@ -821,7 +821,7 @@ button, select{
     }
 
     .blog .blogbox .slide-wrapper {
-        width: 92.5% !important;
+        width: 92.5% ;
         position: absolute;
         display: flex;
         justify-content: space-between;
