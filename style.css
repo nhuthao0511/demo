@@ -983,7 +983,7 @@ transform: translateY(5%);
         bottom: 120px;
     }
     .blog .blog-container{
-        grid-auto-columns: calc((100% / 2) - 9px);
+        grid-auto-columns: calc((100% / 1) - 9px);
     }
     .blogbox .slide-wrapper {
         width: 93% ;
@@ -992,6 +992,11 @@ transform: translateY(5%);
         justify-content: space-between;
         z-index: 1;
         top: 44% ;
+    }
+
+    .card_product{
+        width: 385px;
+        height: 480px;
     }
 
 }
