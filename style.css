@@ -651,6 +651,7 @@ button, select{
 .slide-wrapper i:hover{
     background-color: rgba(255, 223, 82, 0.6);
 }
+
 /* ---------------BACKTOP----------------------- */
 #backtop{
     width: 50px;
@@ -710,7 +711,7 @@ button, select{
     }
   }
 
-/* ----------------------------- */
+/* --------------San pham noi bat--------------- */
 .card_product{
     width: 200px;
     height: 300px;
@@ -812,29 +813,6 @@ transform: translateY(5%);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 /*---------------------------------- FOOTER---------------------------------------- */
 .newletter{
@@ -878,14 +856,7 @@ transform: translateY(5%);
     color: var(--red-coler);
 }
 
-
-
-
-
-
-
-
-
+/* Footer */
 
 .footer{
     background: var(--main-color);
