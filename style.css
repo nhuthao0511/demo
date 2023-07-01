@@ -521,7 +521,7 @@ button, select{
 /*---------------------------------------------- TIN TỨC--------------------------------- */
 .blog {margin-bottom: 20px; position: relative;}
 .blog .blogbox .slide-wrapper {
-    width: 100%;
+    width: 100% !important;
     position: absolute;
     display: flex;
     justify-content: space-between;
