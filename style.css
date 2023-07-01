@@ -608,7 +608,7 @@ button, select{
 }
 
 .slide-wrapper{
-  max-width: 1185px;
+  max-width: 1310px;
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, .2) ;
@@ -820,15 +820,19 @@ button, select{
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
-    .blogbox .slide-wrapper {
+    .blog .blogbox .slide-wrapper {
         width: 93% ;
         position: absolute;
         display: flex;
         justify-content: space-between;
         z-index: 1 !important;
         top: 44% !important;
-        max-width: 1185px;
     }
+
+    .slide-wrapper{
+        max-width: 1185px;
+        width: 100%;
+        position: relative;
 }
 @media (max-width: 768px){
     .search-box input{
