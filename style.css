@@ -935,7 +935,7 @@ button, select{
     }
 
     .slide-wrapper{
-        width: 100%;
+        overflow: hidden;
     } 
 
 
