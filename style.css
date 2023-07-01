@@ -993,12 +993,6 @@ transform: translateY(5%);
         top: 44% ;
     }
 
-    .card_product_box{
-        display: flex;
-        gap: 10px;
-        padding-top: 50px;
-        flex-wrap: wrap;
-    }
 }
 @media (max-width: 768px){
     .search-box input{
