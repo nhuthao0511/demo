@@ -935,7 +935,6 @@ button, select{
     }
 
     .slide-wrapper{
-        max-width: 1310px;
         width: 100%;
     } 
 
@@ -945,7 +944,7 @@ button, select{
     .blog-container{
         gap: 30px;
     }
-    .blog-card{   min-width: calc(50% - 15px);}
+    .blog-card{   min-width: calc(50% - 9px);}
 }
 @media (min-width: 1024px){
     .blog-card{   min-width: calc(33.33% - 20px);}
