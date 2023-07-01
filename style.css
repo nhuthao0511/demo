@@ -931,6 +931,10 @@ button, select{
     .blog .blog-container{
         grid-auto-columns: 100%;
     }
+
+    .slide-wrapper{
+        overflow: hidden;
+    }
 }
 @media (min-width: 570px) {
     .blog-container{
