@@ -608,7 +608,7 @@ button, select{
 }
 
 .slide-wrapper{
-  max-width: 1310px;
+  max-width: 1185px;
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, .2) ;
@@ -821,7 +821,7 @@ button, select{
     }
 
     .blog .blogbox .slide-wrapper {
-        width: 93% ;
+        width: 92.5% !important;
         position: absolute;
         display: flex;
         justify-content: space-between;
@@ -829,10 +829,7 @@ button, select{
         top: 44% !important;
     }
 
-    .slide-wrapper{
-        max-width: 1185px;
-        width: 100%;
-        position: relative;
+
 }
 @media (max-width: 768px){
     .search-box input{
@@ -937,9 +934,9 @@ button, select{
         grid-auto-columns: 100%;
     }
 
-    .slide-wrapper{
+    /* .slide-wrapper{
         overflow: hidden;
-    }
+    } */
 }
 @media (min-width: 570px) {
     .blog-container{
@@ -956,3 +953,4 @@ button, select{
      .blog-card{   min-width: calc(25% - 22.5px);}
     
 }
+
