@@ -397,10 +397,10 @@
 <div class="copyright">
     <p>&#169; .ThaiPhong. Đã đăng ký bản quyền</p>
 </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.7.0.js"integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="crossorigin="anonymous"></script>
+<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="main.js"></script>
+ <script src="https://code.jquery.com/jquery-3.7.0.js"integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="crossorigin="anonymous"></script>
 <script>
     $(document).ready(function() {
     $(window).scroll(function() {
@@ -409,11 +409,11 @@
             } else {
                 $('#backtop').fadeOut();
             }
-            // if ($(this).scrollTop()) {
-            //     $('#backtop_booking').fadeIn();
-            // } else {
-            //     $('#backtop_booking').fadeOut();
-            // }
+            if ($(this).scrollTop()) {
+                $('#backtop_booking').fadeIn();
+            } else {
+                $('#backtop_booking').fadeOut();
+            }
         });
         $("#backtop").click(function() {
         $('html, body').animate({
@@ -421,6 +421,6 @@
         }, 100);
     });
 });
-</script>
+</script> 
 
 </html>
