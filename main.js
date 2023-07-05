@@ -1,29 +1,16 @@
 let search = document.querySelector('.search-box');
-document.querySelector('#search-icon').onclick=()=>{
-    search.classList.toggle('active');
-    menu.classList.remove('active');
+document.querySelector('.booking i').onclick = () =>{
+    search.classList.toggle('active')
 }
-let menu = document.querySelector('.navbar');
-document.querySelector('#menu-icon').onclick=()=>{
-    menu.classList.toggle('active');
-    search.classList.remove('active');
-}
-window.onscroll = ()=>{
-    menu.classList.remove('active');
-    search.classList.remove('active');
-    menuicon.classList.remove('bx-x');
-}
-// THANH MENU
+
+
+
+// --------------------------------------------------------------------------------
 let header=document.querySelector('header');
 window.addEventListener('scroll',()=>{
     header.classList.toggle('shadow', window.scrollY > 0);
 })
-let menuicon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-menuicon.onclick = () => {
-    menuicon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+//--------------------------------------------------------------------------------------------- 
 var MainImg=document.getElementById("MainImg")
 var smallimg=document.getElementsByClassName("small-img")
 smallimg[0].onclick = function(){
@@ -41,14 +28,12 @@ smallimg[3].onclick = function(){
 smallimg[4].onclick = function(){
     MainImg.src = smallimg[4].src;  
 }
-
-
-
+// -------------------------------------------------------------------
 const sr = ScrollReveal ({
-        distance: '65px',
-        duration: 2600,
-        lelay:450,
-        reset: true
+    distance: '68px',
+    duration: 2600,
+    lelay:450,
+    reset: true
 });
 sr.reveal('.home-text',{lelay:200, origin:'top'});
 sr.reveal('.section__product',{lelay:400, origin:'left'});
@@ -60,6 +45,11 @@ sr.reveal('#backtop',{lelay:600, origin:'right'});
 sr.reveal('#backtop_booking',{lelay:600, origin:'right'});
 
 
+
+
+
+
+// ----------------------------------------------------------
 const wrapper = document.querySelector(".blog");
 const carousel = document.querySelector(".blog-container");
 const firstCardWidth = carousel.querySelector(".blog-card").offsetWidth;
@@ -132,5 +122,3 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
-
-
