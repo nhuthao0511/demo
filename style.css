@@ -40,18 +40,21 @@ header.shadow .btn_booking{
     color: var(--trang);
     border: 2px solid var(--trang);
 }
+header.shadow .btn_booking:hover{
+    color: var(--hover);
+}
 body::-webkit-scrollbar{
-    width: 0.5rem;
+    width: 0.9rem;
     background: var(--main-color);
 }
 body::-webkit-scrollbar-thumb{
-    background: var(--hover);
+    background: linear-gradient(to top right,#ffe46b,#FBAD50);
     border-radius: 5rem;
 }
 .nav_container{
     max-width: 65rem;
     padding: 0 2rem;
-    height: 3rem;
+    height: 4.5rem;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -71,17 +74,11 @@ body::-webkit-scrollbar-thumb{
 .booking{
     flex: 1;
 }
-.logo{
-    color: var(--text-color);
-    font-size: 1.1rem;
-    font-weight: 800;
-    text-transform: uppercase;
+.logo img{
     line-height: 2rem;
-    border: 3px solid var(--main-color);
-}
-.logo span{
-    font-weight: 800;
-    color: var(--main-color);
+    margin-top: 42px;
+    width: 320px;
+    margin-left: -195px; 
 }
 .booking{
     display: flex;
@@ -132,15 +129,10 @@ body::-webkit-scrollbar-thumb{
     right: 1rem;
     transition: 0.5s;
 }
-
-
-
-
-
 .nav-links > ul{
     display:flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 12px;
 }
 .nav-link{
     position: relative;
@@ -184,6 +176,8 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: space-between;
     transition: .3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  
 }
 .dropdown-link:not(:nth-last-child(2)){
     border-bottom: 1px solid #00000034;
@@ -191,6 +185,7 @@ body::-webkit-scrollbar-thumb{
 .dropdown-link:hover > a{
     background-color: var(--hover);
     color: var(--trang);
+    
 }
 .dropdown-link i{
     transform: rotate(-90deg);
@@ -316,8 +311,10 @@ body::-webkit-scrollbar-thumb{
 .datlamnen:hover {
     background-color: var(--text-color);
     box-shadow: 0 0 0 5px #ffd0006f;
-    color: #fff;
+    color: var(--hover);
+    position: fixed;
   }
+  
 .home-text h1{
     font-size: 2.4rem;
     color: var(--bg-color);
@@ -588,16 +585,73 @@ button, select{
     color: var(--bg-color);
     border: 1px solid var(--bg-color);
 }
+/*==============================Quy trình 4 bước================================*/
+.heading{
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.heading span{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--bg-color);
+}
+.heading h1{
+    font-size: 1.4rem;
+    color: var(--main);
+}
+#ride{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ride-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    margin-top: 2rem;
+    align-items: start;
+}
+.ride-container .box{
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+}
+div .box{
+    left: 50%;
+    background: var(--text-color);
+    height: 15rem;
+    width: 14rem;
+    z-index: -1;
+    border-radius: 50px;
+    box-shadow: 0 0 0 1rem rgba(255, 228, 107, .6);
+}
+div .box .na-icon{
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    color: var(--hover);
+}
+.ride-container .box h2{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+    border-radius: 12px;
+    color: var(--main);
+    min-height: 80px;
+}
 /* ------------------------------BACKTOP button-------------------------------------------------- */
 #backtop{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     color:var(--bg-color);
     border: 1px solid var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 5px;
     position: fixed;
     bottom: 40px;
     right: 20px;
@@ -610,7 +664,148 @@ button, select{
     color: var(--trang);
     background: linear-gradient(to top right,#ffd000,#ff8c00);
 }
-
+/*----------------------Click messenger------------------*/
+#click{
+    display: none;
+    position: fixed;
+  }
+  label{
+    right: 15px;
+    bottom: 100px;
+    height: 55px !important;
+    width: 55px;
+    background:#5887ef;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+  }
+  label i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+  }
+  label i.fas{
+    opacity: 0;
+    pointer-events: none;
+  }
+  #click:checked ~ label i.fas{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  #click:checked ~ label i.fab{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .wrapper{
+    position: absolute;
+    right: 86px;
+    bottom: 0px;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    position: fixed;
+    z-index: 100000;
+  }
+  #click:checked ~ .wrapper{
+    opacity: 1;
+    bottom: 85px;
+    pointer-events: auto;
+  }
+  .wrapper .head-text{
+    line-height: 60px;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 20px;
+    background:#5887ef;
+  }
+  .wrapper .chat-box{
+    padding: 20px;
+    width: 100%;
+  }
+  .chat-box .desc-text{
+    color: #515365;
+    text-align: center;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .chat-box form{
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+  }
+  .chat-box form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .chat-box form .field:last-child{
+    margin-bottom: 15px;
+  }
+  form .field input,
+  form .field button,
+  form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  form .field input:focus,
+  form .textarea textarea:focus{
+    border-color: #5887ef;
+  }
+  form .field input::placeholder,
+  form .textarea textarea::placeholder{
+    color: silver;
+    transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder,
+  form .textarea textarea:focus::placeholder{
+    color: lightgrey;
+  }
+  .chat-box form .textarea{
+    height: 70px;
+    width: 100%;
+  }
+  .chat-box form .textarea textarea{
+    height: 100%;
+    border-radius: 50px;
+    resize: none;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .chat-box form .field button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background:#5887ef;
+    transition: all 0.3s ease;
+  }
+  .chat-box form .field button:active{
+    transform: scale(0.97);
+  }
 /* -------------------------------SẢN PHẨM BÁN CHẠY--------------------------------------------- */
 .box_product .heading h1{
     text-align: center;
@@ -623,7 +818,7 @@ button, select{
 }
 .card_product{
     width: 200px;
-    height: 300px;
+    height: 200px;
     border-radius: 1em;
     padding: 1.9rem;
     position: relative;
@@ -659,7 +854,7 @@ button, select{
     transform: translateY(20%);
     transition: 0.5s;
 }
-/*Text*/
+/*---Text----*/
 .text-title {
     font-size: 1.5rem;
     font-weight: 900;
@@ -672,7 +867,7 @@ button, select{
     color: var(--trang);
     font-weight: 900;
 } 
-/*Button*/
+/*-----Button---*/
 .card-button {
     padding: 0.6rem;
     outline: none;
@@ -687,7 +882,7 @@ button, select{
     font-weight: bold;
     transition: 0.4s ease;
 }
-/*Image*/
+/*------Image--------*/
 .card-img {
     width: 100%;
     height: 100%;
@@ -696,7 +891,7 @@ button, select{
     left: 0;
 }
 .img_box{border-radius: 1em;}
-/* Hover*/
+/*-----Hover----------*/
 .card_product:hover {
 transform: translateY(5%);
 }
@@ -882,7 +1077,7 @@ transform: translateY(5%);
 .footer{
     background: var(--main-color);
     color: #000;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px
 }
 .footer-container{
@@ -929,12 +1124,12 @@ transform: translateY(5%);
     background: linear-gradient(to top right,#ffe46b,#FBAD50);
 }
 .footer-box .bx_icon  {
-    background: linear-gradient(to top right,#ffe46b,#FBAD50);
+   
     padding: 2px;
     font-size: 2rem;
     border-radius: 45%;
     border: 2px solid rgb(2,3,7,0.4);
-    color: var(--trang);
+    color: var(--bg-color);
 }
 .footer-box .one:hover{
     background: rgb(36, 84, 240);
@@ -943,7 +1138,7 @@ transform: translateY(5%);
 }
 .footer-box .two:hover{
     background: rgb(64, 141, 224);
-    color: var(--main-color);
+    color: var(--main-color);   
     transition: 0.2s all linear;
 }
 .footer-box .three:hover{
@@ -956,64 +1151,7 @@ transform: translateY(5%);
     color: var(--main-color);
     transition: 0.2s all linear;
 }
-/*=============================================================================*/
-.heading{
-    text-align: center;
-    margin-top: 40px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-.heading span{
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--bg-color);
-}
-.heading h1{
-    font-size: 1.4rem;
-    color: var(--main);
-}
-#ride{
-    max-width: 1068px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.ride-container{
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    margin-top: 2rem;
-    align-items: start;
-}
-.ride-container .box{
-    text-align: center;
-    padding: 15px;
-    margin: 15px;
-    cursor: pointer;
-}
-div .box{
-    left: 50%;
-    background: var(--text-color);
-    height: 15rem;
-    width: 14rem;
-    z-index: -1;
-    border-radius: 50px;
-    box-shadow: 0 0 0 1rem rgba(255, 228, 107, .6);
-}
-div .box .na-icon{
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 0.5rem;
-    color: var(--hover);
-}
-.ride-container .box h2{
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 1.4rem 0 0.5rem;
-    border-radius: 12px;
-    color: var(--main);
-    min-height: 80px;
-}
-/* ------------- */
+/* ------------------------------------------------------------------------------- */
 @media (max-width:1080px){
     .home{
         height: 70vh;
@@ -1083,10 +1221,6 @@ div .box .na-icon{
     .dropdown-link:hover > a > i {
         transform: rotate(360deg);
     }
-
-
-
-
     .dropdown-link > a{
         background-color: transparent;
         color: #000;

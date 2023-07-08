@@ -5,7 +5,7 @@ document.querySelector('.booking i').onclick = () =>{
 
 
 
-// --------------------------------------------------------------------------------
+// -----------------------------shadow header------------------------------------
 let header=document.querySelector('header');
 window.addEventListener('scroll',()=>{
     header.classList.toggle('shadow', window.scrollY > 0);
@@ -35,14 +35,14 @@ const sr = ScrollReveal ({
     lelay:450,
     reset: true
 });
-sr.reveal('.home-text',{lelay:200, origin:'top'});
+sr.reveal('.home-text',{lelay:400, origin:'top'});
 sr.reveal('.section__product',{lelay:400, origin:'left'});
 sr.reveal('.heading',{lelay:400, origin:'top'});
 sr.reveal('.heading_blog h1',{lelay:400, origin:'top'});
 sr.reveal('.ride-container .box',{lelay:400, origin:'top'});
 sr.reveal('.blog-container',{lelay:600, origin:'left'});
 sr.reveal('#backtop',{lelay:600, origin:'right'});
-sr.reveal('#backtop_booking',{lelay:600, origin:'right'});
+sr.reveal('label',{lelay:600, origin:'right'});
 
 
 
