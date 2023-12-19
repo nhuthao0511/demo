@@ -311,6 +311,7 @@ video{
     height: 236px;
     box-shadow: 0 0 61px -20px rgba(0,0,0,0.25);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .item_mint-main .log_c{
@@ -352,4 +353,82 @@ video{
 .item_mint-main .btn:hover{
     background-color: #f7c94a;
 }
+
+.main_survey .main_child{
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+}
+
+.o1{
+    padding: 25px;
+}
+
+.item_survey{
+    font-size: 45px;
+    font-weight: 400;
+    color: #545477;
+    padding-bottom: 40px;
+}
+
+.item_survey-2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #545477;
+
+}
+
+.main_survey .survey_content .main_item-survey{
+    display: flex;
+    justify-content: center;
+}
+
+.a1,
+.a2{
+    width: 290px;
+    height: 250px;
+    padding: 30px;
+}
+
+.img_child{
+    padding-bottom: 20px;
+}
+
+.child_content{
+    padding-bottom: 20px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.child_content-2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.sutvey_it{
+    font-size: 20px;
+    font-weight: 400;
+    columns: #545477;
+}
+
+.btn_survey{
+    margin-top: 25px;
+    width: 220px;
+    height: 50px;
+    background-color: rgba(115,103,240,1);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btn_survey .btn_child-survey a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 3;
+}
+
+.btn_survey:hover{
+    background-color: #f7c94a;
+}
+
 
