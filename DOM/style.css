@@ -431,4 +431,200 @@ video{
     background-color: #f7c94a;
 }
 
+.fast_content .main_fast{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.fast_content .b1{
+    margin-top: 90px;
+    padding: 30px;
+    width: 550px;
+    height: 350px;
+}
+
+.main_item-fast h5{
+    font-size: 30px;
+    color:#545477;
+    padding-bottom: 20px;
+}
+
+.main_item-fast .fassst-1{
+    font-size: 25px;
+    color:#545477;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.main_item-fast .fasst-2{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom:15px;
+}
+
+.btn_fast .btn_child-fast{
+    margin-top: 25px;
+    width: 220px;
+    height: 50px;
+    background-color: rgba(115,103,240,1);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.btn_child-fast a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 3;
+}
+
+.btn_fast .btn_child-fast:hover{
+    background-color: #f7c94a;
+}
+
+.img-fast img{
+    width: 493px;
+    height: 389px;
+    border-radius: 10px;
+}
+
+.seo_conten{
+    width: 100%;
+    margin-top: 30px;   
+}
+
+.main_seo-item{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.img_seo,
+.seo-content{
+    padding: 30px;
+}
+
+.se1,
+.lo1{
+    /* width: 450px; */
+    height: 389px;
+
+}
+
+.seo_conten h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: rgb(50, 30, 88);
+}
+
+.seo_conten .item-p{
+    font-size: 28px;
+
+}
+
+.seo_conten .item-p_1{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.seo_conten .item-p_2{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.saless{
+    margin-top: 115px;
+    width: 100%;
+}
+
+.sal-1, 
+.vio1{
+    width: 620px;
+    height: 260px;
+}
+
+.saless_content .main_saless{
+    display: flex;
+    justify-content: center;
+}
+
+.saless_p{
+    padding-bottom: 30px;
+
+}
+
+.saless_p strong{
+    font-size: 22px;
+    color: #7367F0;
+    font-weight: 600;
+    
+}
+
+.saless_content .item_sales{
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: -0.5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 30, 88);
+
+}
+
+.cret_content_112{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.main-cret .cret-item{
+    text-align: center;
+    padding: 30px;
+}
+
+.cret-item .a{
+    padding: 10px;
+}
+
+.content-cret{
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -0.5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 30, 88);
+
+}
+
+.p-cret{
+    font-size: 23px;
+}
+
+.item-cret_span{
+    font-size: 22px;
+}
+
+.btn_cret{
+    margin-top: 25px;
+    width: 290px;
+    height: 40px;
+    background-color: rgba(115,103,240,1);
+    text-align: center;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.btn_child-cret a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5;
+}
+
+.btn_cret:hover {
+    background-color: #f7c94a;
+    cursor: pointer;
+}
+
 
